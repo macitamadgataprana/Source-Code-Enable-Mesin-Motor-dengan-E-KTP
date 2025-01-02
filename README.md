@@ -3,9 +3,13 @@ Proyek ini menyediakan sistem kontrol akses berbasis teknologi RFID. Sistem ini 
 
 Fitur
   •	Kartu Master: Digunakan untuk pemrograman, pendaftaran, dan penghapusan ID kartu RFID.
+  
   •	Mode Normal: Memberikan akses saat kartu yang terdaftar dipindai.
+  
   •	Mode Pemrograman: Memungkinkan penambahan atau penghapusan kartu saat kartu master dipindai.
+  
   •	Kontrol Relay: Mengaktifkan atau menonaktifkan sistem motor berdasarkan kartu yang terdaftar.
+  
   •	Umpan Balik Visual dan Audio: Memberikan umpan balik melalui LED dan buzzer untuk tindakan yang berhasil atau gagal.
 
 Cara Kerja
