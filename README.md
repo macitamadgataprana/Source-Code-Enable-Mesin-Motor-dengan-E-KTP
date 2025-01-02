@@ -14,20 +14,23 @@ Fitur
   •	Umpan Balik Visual dan Audio: Memberikan umpan balik melalui LED dan buzzer untuk tindakan yang berhasil atau gagal.
 
 Cara Kerja
+  
   1.	Inisialisasi:
-      o	Menyiapkan konfigurasi pin awal untuk LED, buzzer, dan modul RFID (MFRC522).
-      o	Mengonfigurasi variabel untuk mode program, ID kartu, dan lainnya.
-  2.	Pendaftaran Kartu Master:
+
+    	o	Menyiapkan konfigurasi pin awal untuk LED, buzzer, dan modul RFID (MFRC522).
+
+    	o	Mengonfigurasi variabel untuk mode program, ID kartu, dan lainnya.
+  3.	Pendaftaran Kartu Master:
       o	Jika kartu master belum terdaftar, sistem akan meminta pengguna untuk memindai kartu.
       o	UID kartu master kemudian disimpan di EEPROM.
-  3.	Loop Utama:
+  4.	Loop Utama:
       o	Sistem terus memeriksa kartu RFID yang ditempatkan dekat pembaca.
       o	Jika kartu terdaftar dipindai di mode normal, sistem memberikan akses (mengaktifkan relay).
       o	Di mode pemrograman (diaktifkan dengan memindai kartu master), sistem memungkinkan penambahan/penghapusan kartu yang terdaftar.
-  4.	Aktivasi Relay:
+  5.	Aktivasi Relay:
       o	Kartu yang terdaftar mengaktifkan motor dengan memicu relay, disertai umpan balik visual dan suara.
       o	Jika kartu yang tidak terdaftar dipindai, akses ditolak dengan sinyal kesalahan (LED merah dan buzzer).
-  5.	Manajemen Kartu:
+  6.	Manajemen Kartu:
       o	Kartu dapat ditambahkan atau dihapus dengan memindainya di mode pemrograman.
 
 Komponen
